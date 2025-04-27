@@ -1,10 +1,16 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignore Maven wrapper files
+.mvn/
+mvnw
+mvnw.cmd
 
-### STS ###
+# Ignore build directories
+target/
+
+# Ensure that the Maven wrapper jar is not ignored
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignore IDE-specific files (Eclipse, IntelliJ, NetBeans, VS Code)
+### STS (Spring Tool Suite)
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +19,29 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+### IntelliJ IDEA
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+### NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
+/build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+### VS Code
 .vscode/
+
+# Ignore OS-specific files
+Thumbs.db
+.DS_Store
+
+# Additional ignored files
+.gitignore
+.gitattributes
